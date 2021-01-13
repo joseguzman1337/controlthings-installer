@@ -6,10 +6,7 @@ Currently, the only official version of ControlThings Platform is the virtual im
 
 With that said, for the adventurous, you are welcome to try to following steps to get a _mostly_ complete install of ControlThings Platform installed natively on your hardware.  This is an interim solution while I work on building a native installer for ControlThings Platform.
 
-1) To start, download the OVA:
-
->  https://drive.google.com/drive/u/0/folders/1Oe30-SHxEtkbNhMaNQIXurZwti221a2i
-
+1) To start, download the [OVA](https://drive.google.com/drive/u/0/folders/1Oe30-SHxEtkbNhMaNQIXurZwti221a2i)
 
 
 ControlThings Platform
