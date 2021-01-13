@@ -17,3 +17,12 @@ With that said, for the adventurous, you are welcome to try to following steps t
 4) Add ControlThings and Kali package repositories to your /etc/apt/sources file
 
 5) Install the controlthings-full package.  This will take a while to download and install, especially if you have a slow Internet connection.
+
+
+
+ControlThings Platform
+A Linux distribution to aid in the cyber security assessment and penetration testing of Industrial Control Systems (ICS), including SCADA, DCS, IoT, IIoT systems, field devices and field busses.  
+
+Virtual machines available now
+Native installer is on its way
+Once you start the VM, you will be automatically logged in as user "control".  Direct root login has been disabled., but you can login as root by opening a terminal and running "sudo -s" with the password "things".
