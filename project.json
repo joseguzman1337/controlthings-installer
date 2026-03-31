@@ -1,0 +1,47 @@
+{
+  "name": "repo-repos-controlthings-installer",
+  "root": "repos/controlthings-installer",
+  "projectType": "library",
+  "targets": {
+    "status": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "git -C repos/controlthings-installer status --short || true"
+      },
+      "metadata": {
+        "supervisorRequired": true
+      }
+    },
+    "fetch": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "git -C repos/controlthings-installer fetch --all --prune || true"
+      },
+      "metadata": {
+        "supervisorRequired": true
+      }
+    },
+    "log": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "git -C repos/controlthings-installer log --oneline -10 || true"
+      },
+      "metadata": {
+        "supervisorRequired": true
+      }
+    },
+    "manifests": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "find repos/controlthings-installer \\( -name package.json -o -name pyproject.toml -o -name Cargo.toml -o -name go.mod -o -name setup.py \\) -not -path '*/node_modules/*' -not -path '*/testdata/*' -not -path '*/fixtures/*' -print | sort"
+      },
+      "metadata": {
+        "supervisorRequired": true
+      }
+    }
+  },
+  "tags": [
+    "scope:repos",
+    "type:subrepo"
+  ]
+}
